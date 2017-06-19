@@ -31,7 +31,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.android.pets.data.PetContract.PetEntry;
-import com.example.android.pets.data.PetDbHelper;
 
 /**
  * Allows user to create a new pet or edit an existing one.
@@ -49,9 +48,6 @@ public class EditorActivity extends AppCompatActivity {
 
     /** EditText field to enter the pet's gender */
     private Spinner mGenderSpinner;
-
-    /** Database helper that will provide us access to the database */
-    private PetDbHelper mDbHelper;
 
     /**
      * Gender of the pet. The possible values are:
